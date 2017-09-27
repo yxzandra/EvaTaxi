@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/layoutTexto">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNombrePersona"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:hint="@string/registro.edit.nombre"
+                android:ems="10"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_theme"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNumeroCuenta"
+                android:inputType="number"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:hint="Numero de cuenta"
+                android:ems="20"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_theme"
+                android:maxLength="20"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:text="Nombre del Banco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textNombreBanco"
+                    android:layout_weight="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerNombreBanco"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_theme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:text="Tipo de cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textTipoCuenta"
+                    android:layout_weight="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerTipoCuenta"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_theme"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layoutTexto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:text="Cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCancelar"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="1dp"/>
+            <Button
+                android:text="Eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnEliminar"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="1dp"/>
+            <Button
+                android:text="Modificar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnModificar"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="1dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

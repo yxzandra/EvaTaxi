@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ismcenter.evataxiapp.Actividades.Pasajeros.MetodoPagoFragment"
+    android:id="@+id/perfilPasajero"
+    android:background="@color/primary_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="PAGOS" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/ic_tdc"
+        android:gravity="center"
+        android:id="@+id/iv_tdc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="TARJETA DE CRÉDITO" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:clickable="true"     >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:id="@+id/cb_visa" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/ic_visa"
+                android:gravity="center"
+                android:id="@+id/iv_visa" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:id="@+id/cb_mas" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/ic_mastercard"
+                android:gravity="center"
+                android:id="@+id/ic_mastercard" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:id="@+id/checkBox" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/ic_american_express"
+                android:gravity="center"
+                android:id="@+id/iv_america" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/toolbarRecarga">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#000000"
+                    android:id="@+id/et_nombre"
+                    android:singleLine="true"
+                    android:background="@drawable/shape_theme"
+                    android:hint="@string/titular"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#000000"
+                    android:singleLine="true"
+                    android:id="@+id/et_cedula"
+                    android:hint="Cédula"
+                    android:background="@drawable/shape_theme"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#000000"
+                    android:singleLine="true"
+                    android:id="@+id/et_tarjeta"
+                    android:background="@drawable/shape_theme"
+                    android:hint="@string/numero_tarjeta"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#000000"
+                    android:singleLine="true"
+                    android:id="@+id/et_codigo"
+                    android:hint="@string/numero_ccv"
+                    android:background="@drawable/shape_theme"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_theme"
+
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#000000"
+                        android:singleLine="true"
+                        android:id="@+id/et_fecha"
+                        android:hint="Fecha exp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:inputType="date" />
+                </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mes"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/año"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSolicitar"
+            android:text="PAGAR"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="0.12" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

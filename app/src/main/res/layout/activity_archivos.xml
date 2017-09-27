@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ismcenter.evataxiapp.Actividades.Pasajeros.ActivityPerfil"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarRecarga"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+     <RadioGroup
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cedula"
+        android:id="@+id/rb_cedula"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fotografia_app"
+        android:id="@+id/rb_fotografia"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+     </RadioGroup>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/photo_camera_check" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAceptar"
+        android:background="@drawable/shape"
+        android:text="@string/aceptar"
+        android:textAllCaps="false"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/imCoordenadas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
+
+
+</LinearLayout>

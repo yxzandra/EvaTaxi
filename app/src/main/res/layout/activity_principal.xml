@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Actividades.PrincipalActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/ic_fondo_login"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/ic_logo_login"
+                android:id="@+id/imagelogo"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/login.text.cambia"
+                android:id="@+id/textCabecera"
+                android:layout_below="@+id/imagelogo"
+                android:textAlignment="center"
+                android:textColor="@color/primary_light"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login.btn.registrate_ahora"
+            android:id="@+id/btnRegistrate"
+            android:background="@drawable/shape"
+            android:textColor="@color/primary_text"/>
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login.btn.iniciar_sesion"
+            android:id="@+id/btnIniciarSesion"
+            android:background="@drawable/shape"
+            android:textColor="@color/primary_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/login.text.o_inicia"
+            android:id="@+id/textInferior" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnGmail"
+                android:background="@drawable/ic_gmail"/>
+
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnFacebook"
+                android:background="@drawable/ic_facebook"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

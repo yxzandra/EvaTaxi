@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Eva Taxi</string>
+    <string name="validar">Validar</string>
+    <string name="monto">Monto</string>
+    <string name="archivos.documentacion">Documentacion</string>
+    <string name="archivos.cedula">Cedula</string>
+    <string name="archivos.capturando_imagen">Capturar imagen</string>
+    <string name="archivos.agregar">Agregar</string>
+    <string name="archivos.fotografia">Fotogracia</string>
+
+
+    <string name="KHtotal">Kilometros totales</string>
+    <string name="valor">Costo por Kilometros</string>
+    <string name="monto_total">Monto total</string>
+    <string name="solicitar">Solicitar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="origen">Origen:</string>
+    <string name="destino">Destino</string>
+    <string name="editar_perfil">Editar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="nombre">Nombre:</string>
+    <string name="titular">Titular de la tarjeta:</string>
+    <string name="numero_tarjeta">Número de tarjeta:</string>
+    <string name="fecha_exp">Fecha de expedición:</string>
+    <string name="numero_ccv">CVV:</string>
+    <string name="apellido">Abache</string>
+    <string name="cedula">Cedula - Rif:</string>
+    <string name="correo">Correo:</string>
+    <string name="direccion">Dirección:</string>
+    <string name="telefonos">Telefonos:</string>
+    <string name="estatus">Estatus:</string>
+    <string name="cod_postal">Codigo postal:</string>
+    <string name="fecha">Fecha de Nacimiento:</string>
+    <string name="fotografia_app">Fotografia:</string>
+    <string name="metodoPago">Metodo de Pago:</string>
+    <string name="deposito">Deposito</string>
+    <string name="tdc">Tarjeta de Credito</string>
+    <string name="transferencia">Transferencia</string>
+    <string name="tarjetaCredito">Tarjeta de Credito:</string>
+    <string name="terminos">Aceptar terminos y condiciones</string>
+    <string name="editar">Editar</string>
+    <string name="activo">Activo</string>
+    <string name="inactivo">Inactivo</string>
+    <string name="chofer">Chofer</string>
+    <string name="pasajero">Pasajero</string>
+    <string name="login.btn.registrate_ahora">registrate ahora</string>
+    <string name="login.text.cambia">CAMBIA TU MANERA DE MOVERTE POR LA CIUDAD</string>
+    <string name="login.btn.iniciar_sesion">inicia sesión</string>
+    <string name="login.text.o_inicia">O inicia sesión con</string>
+    <string name="registro.text.datos_personales">DATOS PERSONALES</string>
+    <string name="registro.edit.nombre">Nombre Completo/Razon Social</string>
+    <string name="registro.edit.ingrese_cedula">Ingrese cédula o RIF</string>
+    <string name="registro.edit.ingrese_correo">E-Mail</string>
+    <string name="registro.edit.ingrese_fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="registro.edit.ingrese_telefono">Teléfono Móvil</string>
+    <string name="registro.text.datos_acceso">DATOS DE ACCESO</string>
+    <string name="registro.edit.ingrese_usuario">Nombre de usuario</string>
+    <string name="registro.edit.ingrese_clave">Contraseña minimo 4 caracterres</string>
+    <string name="registro.edit.confirmar_clave">Confirmar contraseña</string>
+    <string name="registro.radio_button.terminos">Acepto los terminos y condiciones</string>
+    <string name="registro.button.registrar">registrar</string>
+    <string name="registro.edit.ingrese_direccion">Direccion</string>
+    <string name="login.edit.clave">Ingrese su clave</string>
+    <string name="login.text.recupera_tu_clave">Olvidaste tu contraseña?</string>
+
+
+    <string name="action_settings">Solicitud manual</string>
+    <string name="fotografia">Toma de Fotografia</string>
+    <string name="productos_item">Perfil</string>
+    <string name="compras_item">Codigo de Validación</string>
+    <string name="ordenes_item">Recarga de Saldo</string>
+    <string name="facturas_item">Libreta de Direcciones</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="historiales">Historiales (Solicitudes y Pagos)</string>
+
+    <string name="log_out_item">Cerrar Sesión</string>
+    <string name="configuracion_item">Configuración</string>
+    <string name="title_activity_validacion">Validaciòn de codigos</string>
+    <string name="title_activity_recarga">Recarga de saldo</string>
+    <string name="title_activity_perfil">Mi perfil</string>
+    <string name="title_activity_solicitar">Solicitar</string>
+    <string name="title_activity_archivo">Documentacion</string>
+    <string name="title_activity_favoritos">Favoritos</string>
+    <string name="title_activity_historial">Historial de solicitudes</string>
+    <string name="header_authorization">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ2LCJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuMTBcL2V2YXRheGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTQ4MDE2NDY1MCwiZXhwIjoxNDgwMTk0NjUwLCJuYmYiOjE0ODAxNjQ2NTAsImp0aSI6ImRhYzZhOWIwYjY3YmM3YzU2NTkwMWQ3Y2ZiMDVhYTcwIn0.QeqOQFWfB6lrHf8ZAVSdLanFQVZvSIgd_Pb0JQl-WVM</string>
+    <string name="URL">http://api.evataxi.com.ve/api/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aceptar4">Octubre</string>
+    <string name="aceptar3">Septiembre</string>
+    <string name="aceptar2">Agosto</string>
+    <string name="aceptar1">Julio</string>
+    <string name="title_activity_map_gps">ActivityMapGps</string>
+
+
+    <string name="recuperar.button.enviar">Enviar</string>
+    <string name="recuperar.text.titulo">RECUPERACIÓN DE CONTRASEÑA</string>
+    <string name="recuperar.text.parrafo">Ingresa el Email con el que te registraste y te ayudaremos</string>
+    <string name="estatusConductor.edittex.modeloDelCarro">Modelo del carro</string>
+    <string name="estatusConductor.edittex.placa">Placa del Carro</string>
+    <string name="estatusConductor.edittex.color">Color del Carro</string>
+    <string name="estatusConductor.edittex.tipoDeUsuario">Taxista</string>
+    <string name="estatusConductor.edittex.nombreDelConductor">Nombre del Conductor</string>
+    <string name="estatusConductor.edittex.cambioEstado">Cambio de estado</string>
+    <string name="toggle_turn_on">On</string>
+    <string name="toggle_turn_off">Off</string>
+    <string name="estatus.text.parrafo">Selecciona ON LINE para ser detectado por el GPS de los posibles pasajeros y OFF LINE si quieres tomarte un descanso.</string>
+    <string name="title_activity_main_conductor">Solicitudes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_Conductores">Conductores</string>
+    <string name="agregarDatoBancario">Agregar Banco</string>
+    <string name="cambioClave.text.titulo">Cambia tu Clave Temporal</string>
+    <string name="cambioClave.text.parrafo">Ingrese una nueva clave personal para seguir disfrutando de tu aplicacion</string>
+    <string name="cambioClave.button.cambiar">Cambiar</string>
+    <string name="title_activity_solicitud_automatica_fragment">SolicitudAutomaticaFragment</string>
+
+
+</resources>

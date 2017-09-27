@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ismcenter.evataxiapp.Actividades.Pasajeros.MetodoPagoFragment"
+    android:id="@+id/perfilPasajero"
+    android:background="@color/primary_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_margin="30dp"
+        android:id="@+id/layou_deposito"
+        android:clickable="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_deposito"
+            android:layout_width="@dimen/perfil_image_size"
+            android:layout_height="@dimen/perfil_image_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_deposito"
+            app:border_color="@android:color/white"
+            app:border_width="1dp"
+
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Deposito"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_margin="30dp"
+        android:id="@+id/layou_t"
+
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_trans"
+            android:layout_width="@dimen/perfil_image_size"
+            android:layout_height="@dimen/perfil_image_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_transf"
+            app:border_color="@android:color/white"
+            app:border_width="1dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Transferencia"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        android:id="@+id/layou_tdc"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_card"
+            android:layout_width="@dimen/perfil_image_size"
+            android:layout_height="@dimen/perfil_image_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_card"
+            app:border_color="@android:color/white"
+            app:border_width="1dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Tarjeta de Crédito"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

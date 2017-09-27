@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="22dp"
+>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_featured_image"
+        android:text="Sin nombre"
+        android:textColor="#080808"
+        android:textSize="13sp"
+        tools:text="Sin nombre" />
+
+
+    <TextView
+        android:id="@+id/tv_estatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_featured_image"
+        android:text="Sin estatus"
+        android:textColor="#9E9E9E"
+        android:textSize="12sp"
+        tools:text="Sin estatus" />
+
+    <!-- descripcion breve-->
+    <TextView
+        android:id="@+id/tv_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_featured_image"
+        android:text="Sin descripcion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#4C4C4C"
+        tools:text="Correo no disponible" />
+
+    <!-- Imagen de perfil -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tv_featured_image"
+        android:layout_width="@dimen/perfil_image_size"
+        android:layout_height="@dimen/perfil_image_size"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_perfil"
+        app:border_color="@android:color/white"
+        app:border_width="1dp"/>
+
+    <!-- favoritos-->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/iv_check"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zonas">
+        <item>Seleccione una zona</item>
+        <item>Zona Uno</item>
+        <item>Zona Dos</item>
+        <item>Zona Tres</item>
+        <item>Agregar otros...</item>
+    </string-array>
+</resources>

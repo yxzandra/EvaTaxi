@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/user"
+            android:title="Mi Perfil" />
+        <item
+            android:id="@+id/nav_estatus"
+            android:icon="@drawable/ic_checkmenu"
+            android:title="Cambiar Estatus" />
+        <item
+            android:id="@+id/nav_servicios"
+            android:icon="@drawable/ic_list"
+            android:title="Servicios" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_medal"
+            android:title="Calificar Cliente"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_banc"
+            android:icon="@drawable/ic_creditcard"
+            android:title="Mis Datos Bancarios" />
+    </group>
+
+    <item android:title="Consultas">
+        <menu>
+            <item
+                android:id="@+id/nav_historial_servicios"
+                android:icon="@drawable/ic_taxi"
+                android:title="Servicios Realizados" />
+            <item
+                android:id="@+id/nav_monto_total"
+                android:icon="@drawable/ic_piggy"
+                android:title="Monto Total por Servicio" />
+            <item
+                android:id="@+id/nav_pagos_recibidos"
+                android:icon="@drawable/ic_payment"
+                android:title="Pagos Recibidos" />
+            <item
+                android:id="@+id/nav_pagos_pendientes"
+                android:icon="@drawable/ic_money"
+                android:title="Pagos Pendientes" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/configuration_section"
+        android:title="@string/configuracion_item">
+        <menu>
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/log_out_item" />
+        </menu>
+    </item>
+
+</menu>

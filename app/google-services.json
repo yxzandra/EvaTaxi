@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "317460406770",
+    "firebase_url": "https://evataxi-2efd7.firebaseio.com",
+    "project_id": "evataxi-2efd7",
+    "storage_bucket": "evataxi-2efd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317460406770:android:264d480154554be7",
+        "android_client_info": {
+          "package_name": "com.ismcenter.evataxiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317460406770-rtnrvpdlpjhuhcpd9hmv4i2tu8o4o988.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLtqWVhJdwAb6VqgQXiAJ6Lj2yV6YOFME"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

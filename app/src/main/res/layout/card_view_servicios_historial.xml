@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    card_view:contentPadding="20dp"
+    card_view:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textNombrePasajero"
+            android:text="Nombre del Pasajero"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primary_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textIdServicio"
+            android:text="Numero del servicio"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primary_text"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textNombrePasajero"/>
+        <TextView
+            android:text="Fecha del servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textFechaServicio"
+            android:layout_below="@+id/textIdServicio"
+            android:textColor="@color/primary_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:text="Origen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textOrigenServicio"
+            android:layout_below="@+id/textFechaServicio"
+            android:visibility="gone"/>
+
+        <TextView
+            android:text="Destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textDestinoServicio"
+            android:layout_below="@+id/textOrigenServicio"
+            android:visibility="gone"/>
+
+        <TextView
+            android:text="Respuesta Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/textNombrePasajero"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textRespuestaNombre" />
+
+        <TextView
+            android:text="Respuesta id Servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textRespuestaNombre"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textIdServicio"
+            android:id="@+id/textResultadoServicio" />
+
+        <TextView
+            android:text="Resultado Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textResultadoFechaServicio"
+            android:layout_below="@+id/textResultadoServicio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textFechaServicio"/>
+
+        <TextView
+            android:text="Resultado Origen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textResultadoOrigenServicio"
+            android:layout_below="@+id/textResultadoFechaServicio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textOrigenServicio"
+            android:visibility="gone"/>
+
+        <TextView
+            android:text="Resultado Destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textResultadoDestinoServicio"
+            android:layout_below="@+id/textResultadoOrigenServicio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textDestinoServicio"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

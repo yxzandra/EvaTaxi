@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ismcenter.evataxiapp.Actividades.Choferes.ServicioActualFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/solicitudCancel">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/activity_estatus_conductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Servicio Ejecutandose Actualmente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTituloSolicitud"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Numero del Servicio:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/textIdServicio"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Nombre Pasajero:"
+            android:ems="10"
+            android:id="@+id/editNombrePasajero"
+            android:layout_margin="7dp"
+            android:focusable="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Telefono:"
+            android:ems="10"
+            android:id="@+id/editTelefono"
+            android:layout_margin="7dp"
+            android:focusable="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Origen:"
+            android:ems="10"
+            android:id="@+id/editOrigen"
+            android:focusable="false"
+            android:layout_margin="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Destino:"
+            android:ems="10"
+            android:id="@+id/editDestino"
+            android:focusable="false"
+            android:layout_margin="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Chofer Seleccionado"
+            android:ems="10"
+            android:id="@+id/editFavorito"
+            android:focusable="false"
+            android:layout_margin="7dp"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:text="Ver Mapa"
+            android:id="@+id/btnVerMapaAccept"
+            android:background="@drawable/shape"
+            android:textColor="@color/primary_text"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:text="Cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnCancelarSolicitud"
+                android:padding="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:layout_marginRight="1dp"
+                android:visibility="gone"
+                android:textSize="@dimen/botonInferior.textSize"/>
+
+            <Button
+                android:text="Llego al origen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnChoferOrigen"
+                android:padding="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:textSize="@dimen/botonInferior.textSize"/>
+
+
+            <Button
+                android:text="Llego al destino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnChoferDestino"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                android:textSize="@dimen/botonInferior.textSize"/>
+        </LinearLayout>
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

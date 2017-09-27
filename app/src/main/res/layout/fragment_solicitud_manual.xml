@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/serviciosDisponibles"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_autocompletar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_linear"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_below="@+id/editTextZona"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_autocompletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_linear"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_below="@+id/editTextZona"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_autocompletar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_linear"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_below="@+id/editTextZona"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextZona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su zona"
+            android:padding="10dp"
+            android:background="@drawable/shape_theme"
+            android:drawableLeft="@drawable/placeholder_origen"
+            android:maxLines="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su origen"
+            android:padding="10dp"
+            android:background="@drawable/shape_theme"
+            android:visibility="invisible"
+            android:drawableLeft="@drawable/placeholder_origen"
+            android:maxLines="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su destino"
+            android:padding="10dp"
+            android:background="@drawable/shape_theme"
+            android:visibility="invisible"
+            android:drawableLeft="@drawable/placeholder_origen"
+            android:maxLines="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextPunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese un punto de referencia"
+            android:padding="10dp"
+            android:background="@drawable/shape_theme"
+            android:visibility="invisible"
+            android:drawableLeft="@drawable/placeholder_origen"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSolicitar"
+            android:text="Cotizar"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:layout_weight="0.47"
+            android:layout_alignTop="@+id/rv_autocompletar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="46dp" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+

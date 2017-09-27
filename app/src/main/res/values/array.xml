@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bancos">
+        <item>Seleccione un Banco</item>
+        <item>Banesco</item>
+        <item>Provincial</item>
+        <item>Mercantil</item>
+        <item>Agregar otros...</item>
+    </string-array>
+
+    <string-array name="cedula">
+        <item>V</item>
+        <item>E</item>
+        <item>J</item>
+    </string-array>
+
+    <string-array name="tipoCuenta">
+        <item>Ahorro</item>
+        <item>Corriente</item>
+    </string-array>
+
+
+</resources>

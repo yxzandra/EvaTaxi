@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recarga_saldo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ismcenter.evataxiapp.Actividades.Pasajeros.DepositoSaldoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolbarRecarga">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#000000"
+                android:id="@+id/et_nombre"
+                android:singleLine="true"
+                android:hint="@string/titular"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#000000"
+                android:singleLine="true"
+                android:id="@+id/et_cedula"
+                android:hint="Cédula"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#000000"
+                android:singleLine="true"
+                android:id="@+id/et_tarjeta"
+                android:hint="@string/numero_tarjeta"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="102dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#000000"
+                    android:singleLine="true"
+                    android:id="@+id/et_fecha"
+                    android:hint="Fecha exp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="date" />
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mes"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/año"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#000000"
+                android:singleLine="true"
+                android:id="@+id/et_codigo"
+                android:hint="@string/numero_ccv"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#000000"
+                android:singleLine="true"
+                android:id="@+id/et_monto"
+                android:hint="Monto"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#000000"
+                android:singleLine="true"
+                android:id="@+id/et_descripcion"
+                android:hint="Descripción"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Boton para validar codogo -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aceptar"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:id="@+id/btValidar"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+    </RelativeLayout>
